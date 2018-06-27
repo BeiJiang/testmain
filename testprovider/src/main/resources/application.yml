@@ -1,0 +1,64 @@
+#默认使用配置
+spring:
+  profiles:
+     active: local
+
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.test.dao.entity
+  mapperLocations: classpath:mapper/*.xml
+
+#开发配置
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/jiangbeiDB?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  ## Dubbo 服务提供者配置
+  dubbo:
+    application:
+      name: demo
+      registry:
+        address: zookeeper://127.0.0.1:2181
+      protocol:
+        name: dubbo
+        port: 20880
+    scan: org.spring.springboot.dubbo
+
+## 避免和 server 工程端口冲突
+server:
+  port: 8081
+
+#配置日志
+logging:
+  #配置日志文件路径
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+  #file: demo.log
+  pattern:
+    file: "%d | [%file:%line] | -%msg%n"
+    console: "%d -%msg%n"
+    dateformat: yyyy-MM-dd HH:mm:ss
+  file:
+    max-history: 0
+    max-size: 10MB
+  path: logs/
+
+#mongodb
+mongodb:
+  primary:
+    host: localhost
+    port: 27017
+    database: test
+  secondary:
+    host: localhost
+    port: 27017
+    database: test1
+
+
+
+
+
