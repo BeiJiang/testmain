@@ -3,11 +3,15 @@ package com.test.api.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
- * Created by liushaohua on 2018/6/22.
+ *
+ * @author liushaohua
+ * @date 2018/6/22
  */
 @Data
-public class UserDTO {
+public class UserDTO implements Serializable{
     private Long id;
 
     private String name;

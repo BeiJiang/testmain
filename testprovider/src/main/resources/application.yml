@@ -18,13 +18,13 @@ spring:
   ## Dubbo 服务提供者配置
   dubbo:
     application:
-      name: demo
-      registry:
-        address: zookeeper://127.0.0.1:2181
-      protocol:
-        name: dubbo
-        port: 20880
-    scan: org.spring.springboot.dubbo
+      name: testprovider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.test
 
 ## 避免和 server 工程端口冲突
 server:

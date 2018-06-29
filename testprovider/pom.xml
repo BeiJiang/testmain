@@ -62,12 +62,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!--boot 热部署-->
+		<!--boot 热部署
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		-->
 
 		<!-- Spring Boot Test 依赖 -->
 		<dependency>
@@ -111,17 +112,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>com.test.api</groupId>
-			<artifactId>testapi</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.test.api</groupId>
-			<artifactId>testapi</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.test.api</groupId>
-			<artifactId>testapi</artifactId>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
 		</dependency>
 	</dependencies>
 
