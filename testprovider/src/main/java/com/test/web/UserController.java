@@ -1,7 +1,7 @@
 package com.test.web;
 
 
-import com.test.Utils.RedisUtil;
+import com.test.utils.RedisUtil;
 import com.test.dao.entity.UserDo;
 import com.test.service.UserServiceI;
 import org.springframework.beans.factory.annotation.Autowired;

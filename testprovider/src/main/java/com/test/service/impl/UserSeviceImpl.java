@@ -1,7 +1,7 @@
 package com.test.service.impl;
 
 
-import com.test.Utils.RedisUtil;
+import com.test.utils.RedisUtil;
 import com.test.api.dto.UserDTO;
 import com.test.dao.UserMapper;
 import com.test.dao.entity.UserDo;
